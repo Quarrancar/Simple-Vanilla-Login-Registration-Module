@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Combined the Boxicons CSS and JS into one link as they are from the same source -->
+    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Registration</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Signup Section -->
+        <div class="signup-section">
+            <header>Signup</header>
+            <!-- Social Buttons - Reused in both signup and login sections -->
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class='bx bxl-apple'></i> Use Apple</button>
+            </div>
+            <!-- Separator - Reused in both signup and login sections -->
+            <div class="separator">
+                <div class="line"></div>
+                <p>Or</p>
+                <div class="line"></div>
+            </div>
+            <!-- Signup Form -->
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <a href="#">Forgot Password?</a>
+                <button type="submit" class="btn">Signup</button>
+            </form>
+        </div>
+
+        <!-- Login Section -->
+        <div class="login-section">
+            <header>Login</header>
+            <!-- Social Buttons & Separator are the same as the signup section -->
+            <div class="social-buttons">
+                <button><i class='bx bxl-google'></i> Use Google</button>
+                <button><i class='bx bxl-apple'></i> Use Apple</button>
+            </div>
+            <div class="separator">
+                <div class="line"></div>
+                <p>Or</p>
+                <div class="line"></div>
+            </div>
+            <!-- Login Form -->
+            <form>
+                <input type="email" placeholder="Email address" required>
+                <input type="password" placeholder="Password" required>
+                <a href="#">Forgot Password?</a>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Removed the separate Boxicons JS as it's not needed when using the CSS version -->
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
